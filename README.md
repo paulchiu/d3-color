@@ -1,6 +1,17 @@
 # d3-color
 
-Even though your browser understands a lot about colors, it doesn’t offer much help in manipulating colors through JavaScript. The d3-color module therefore provides representations for various color spaces, allowing specification, conversion and manipulation. (Also see [d3-interpolate](https://github.com/d3/d3-interpolate) for color interpolation.)
+> **⚠️ Historical Version Notice**
+>
+> This is d3-color version 2.0.1, a historical version maintained for **CommonJS backwards compatibility only**. This version includes security patches but retains CommonJS module support that was removed in version 3.0.0.
+>
+> **Use this version only if:**
+> - You need CommonJS support (`require()` syntax)
+> - You cannot migrate to ES modules (`import`/`export` syntax)
+> - You are working with legacy build systems that don't support ES modules
+>
+> **For new projects, use the latest version** which supports ES modules and receives active development.
+
+Even though your browser understands a lot about colors, it doesn't offer much help in manipulating colors through JavaScript. The d3-color module therefore provides representations for various color spaces, allowing specification, conversion and manipulation. (Also see [d3-interpolate](https://github.com/d3/d3-interpolate) for color interpolation.)
 
 For example, take the color named “steelblue”:
 
