@@ -25,7 +25,7 @@
   "module": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/d3/d3-color.git"
+    "url": "git+https://github.com/paulchiu/d3-color.git"
   },
   "files": [
     "dist/**/*.js",
