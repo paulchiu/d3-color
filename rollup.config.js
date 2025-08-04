@@ -5,7 +5,7 @@ const config = {
   input: "src/index.js",
   external: Object.keys(meta.dependencies || {}).filter(key => /^d3-/.test(key)),
   output: {
-    file: `dist/${meta.name}.js`,
+    file: `dist/d3-color-common-js.js`,
     name: "d3",
     format: "umd",
     indent: false,
@@ -22,7 +22,7 @@ export default [
     ...config,
     output: {
       ...config.output,
-      file: `dist/${meta.name}.min.js`
+      file: `dist/d3-color-common-js.min.js`
     },
     plugins: [
       ...config.plugins,

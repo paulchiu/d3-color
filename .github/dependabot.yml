@@ -1,0 +1,39 @@
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    # Allow both patch and minor updates
+    open-pull-requests-limit: 10
+    # Auto-merge patch updates
+    allow:
+      - dependency-type: "direct"
+        update-type: "version-update:semver-patch"
+      - dependency-type: "direct"
+        update-type: "version-update:semver-minor"
+      - dependency-type: "indirect"
+        update-type: "version-update:semver-patch"
+      - dependency-type: "indirect"
+        update-type: "version-update:semver-minor"
+    # Group updates to reduce PR noise
+    groups:
+      dev-dependencies:
+        patterns:
+          - "eslint*"
+          - "rollup*"
+          - "tape*"
+        update-types:
+          - "patch"
+          - "minor"
+    # Add labels to PRs
+    labels:
+      - "dependencies"
+      - "auto-update"
+    # Commit message configuration
+    commit-message:
+      prefix: "deps"
+      include: "scope"

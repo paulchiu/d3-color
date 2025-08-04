@@ -19,9 +19,9 @@
     "name": "Mike Bostock",
     "url": "http://bost.ocks.org/mike"
   },
-  "main": "dist/d3-color.js",
-  "unpkg": "dist/d3-color.min.js",
-  "jsdelivr": "dist/d3-color.min.js",
+  "main": "dist/d3-color-common-js.js",
+  "unpkg": "dist/d3-color-common-js.min.js",
+  "jsdelivr": "dist/d3-color-common-js.min.js",
   "module": "src/index.js",
   "repository": {
     "type": "git",
