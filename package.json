@@ -1,6 +1,6 @@
 {
-  "name": "d3-color",
-  "version": "2.0.1",
+  "name": "@paulchiu/d3-color-common-js",
+  "version": "2.0.2",
   "description": "Color spaces! RGB, HSL, Cubehelix, Lab and HCL (Lch).",
   "keywords": [
     "d3",
